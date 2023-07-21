@@ -19,11 +19,11 @@ const TesseractConfig = {
 
 // Inisialisasi Express.js
 app.use(express.json());
-app.get('/', (req, res) => {
+app.get('/node_ocr', (req, res) => {
     res.send('Hello, World!');
   });
 // Route untuk mengenali teks dari URL gambar
-app.post('/recognize', async (req, res) => {
+app.post('/node_ocr/recognize', async (req, res) => {
   const imageUrl = req.body.imageUrl;
 
   if (!imageUrl) {
