@@ -93,5 +93,5 @@ async function processImage(imagePath, res) {
 
 // Jalankan server
 app.listen(port, () => {
-  console.log(`Server is running on http://${process.env.HOST}:${port}`);
+  console.log(`Server is running on https://${process.env.HOST}:${port}`);
 });
